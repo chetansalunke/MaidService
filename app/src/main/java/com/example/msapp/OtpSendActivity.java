@@ -66,7 +66,6 @@ public class OtpSendActivity extends AppCompatActivity {
             public void onVerificationCompleted(@NonNull PhoneAuthCredential credential) {
 
             }
-
             @Override
             public void onVerificationFailed(@NonNull FirebaseException e) {
                 binding.probar1.setVisibility(View.GONE);
@@ -81,7 +80,7 @@ public class OtpSendActivity extends AppCompatActivity {
                 binding.probar1.setVisibility(View.GONE);
                 binding.btnsend.setVisibility(View.VISIBLE);
                 Intent intent = new Intent(OtpSendActivity.this,OtpVerifyActivity.class);
-                Toast.makeText(OtpSendActivity.this, verificationId, Toast.LENGTH_SHORT).show();
+                Toast.makeText(OtpSendActivity.this, "OTP Succesfully Send.", Toast.LENGTH_SHORT).show();
                 intent.putExtra("phone",binding.etPhone.getText().toString().trim());
                 intent.putExtra("verificationId",verificationId);
                 startActivity(intent);
