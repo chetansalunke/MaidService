@@ -8,14 +8,19 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.denzcoskun.imageslider.ImageSlider;
+import com.denzcoskun.imageslider.constants.ScaleTypes;
+import com.denzcoskun.imageslider.interfaces.ItemClickListener;
+import com.denzcoskun.imageslider.models.SlideModel;
 import com.example.msapp.R;
+import com.example.msapp.databinding.FragmentHomeBinding;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class homeFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-
-
+    private FragmentHomeBinding binding;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -25,7 +30,42 @@ public class homeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        binding = FragmentHomeBinding.inflate(inflater, container, false);
+        View rootView = binding.getRoot();
+
+        // Access the SliderView using binding
+        ImageSlider sliderView = binding.imageSlider;
+
+        // Now, create a list of SlideModel with images from the drawable folder
+        List<SlideModel> imageList = new ArrayList<>();
+        imageList.add(new SlideModel(R.drawable.banner1,ScaleTypes.FIT));
+        imageList.add(new SlideModel(R.drawable.banner1,ScaleTypes.FIT));
+        imageList.add(new SlideModel(R.drawable.banner1,ScaleTypes.FIT));
+
+        // Set the image list to the SliderView
+        sliderView.setImageList(imageList);
+
+
+        binding.imageSlider.setItemClickListener(new ItemClickListener() {
+            @Override
+            public void onItemSelected(int i) {
+
+            }
+
+            @Override
+            public void doubleClick(int i) {
+
+            }
+        });
+
+        return rootView;
+
+
+
+
+
+
+
+
     }
 }
