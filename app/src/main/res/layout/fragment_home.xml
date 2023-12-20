@@ -7,7 +7,7 @@
     tools:context=".Fragment.homeFragment">
 
 
-    <!-- res/layout/image_text_card_view.xml -->
+
 
     <ScrollView
         android:layout_width="match_parent"
@@ -263,7 +263,7 @@
 
                                 <TextView
                                     android:layout_width="67dp"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="35dp"
                                     android:text="patient care"
                                     android:textAlignment="center"
                                     app:layout_constraintBottom_toBottomOf="parent"
@@ -357,10 +357,10 @@
                                 android:layout_height="match_parent">
 
                                 <ImageView
-                                    android:id="@+id/broomingImg"
+                                    android:id="@+id/driverImgview"
                                     android:layout_width="67dp"
                                     android:layout_height="67dp"
-                                    android:src="@mipmap/domestic"
+                                    android:src="@mipmap/driver"
                                     app:layout_constraintBottom_toTopOf="@+id/broomingTextView"
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintHorizontal_bias="0.666"
@@ -377,7 +377,7 @@
                                     app:layout_constraintBottom_toBottomOf="parent"
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toBottomOf="@+id/broomingImg" />
+                                    app:layout_constraintTop_toBottomOf="@+id/driverImgview" />
                             </androidx.constraintlayout.widget.ConstraintLayout>
                         </LinearLayout>
 
