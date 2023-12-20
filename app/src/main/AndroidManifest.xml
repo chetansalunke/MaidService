@@ -15,16 +15,22 @@
         android:theme="@style/Theme.MSApp"
         tools:targetApi="31">
         <activity
+            android:theme="@style/BookingTheme"
+            android:name=".BookingActivity"
+            android:exported="false" />
+        <activity
             android:name=".OtpVerifyActivity"
             android:exported="false" />
         <activity
             android:name=".OtpSendActivity"
             android:exported="true">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name=".MainActivity"
