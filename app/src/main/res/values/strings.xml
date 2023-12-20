@@ -6,4 +6,10 @@
     <string name="booking">Booking</string>
     <string name="profile">Profile</string>
     <string name="helloo">helloo</string>
+    <string name="radiobtn1">Male</string>
+    <string name="radiobtn2">Female</string>
+    <string name="servicetype">Service Type</string>
+
+    <string name="workerpreferences">Worker Preferences</string>
+    <string name="actionbartext">Booking</string>/>
 </resources>

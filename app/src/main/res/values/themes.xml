@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.MSApp" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="Base.Theme.MSApp" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your light theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -10,8 +10,7 @@
     <style name="Theme.MSApp" parent="Base.Theme.MSApp" />
 
 
-
-    <style name="BookingTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="BookingTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize the color of the action bar -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -20,5 +19,20 @@
         <item name="android:windowActionBar">true</item>
         <item name="android:windowNoTitle">false</item>
     </style>
+
+
+    <style name="largerText">
+        <!-- Customize the color of the action bar -->
+        <item name="android:fontFamily">@font/andika_new_basic_bold</item>
+       <item name="android:textSize">18sp</item>
+        <item name="textFillColor">@color/black</item>
+    </style>
+    <style name="smallText">
+        <!-- Customize the color of the action bar -->
+        <item name="android:fontFamily">@font/andika_new_basic_bold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="textFillColor">@color/black</item>
+    </style>
+
 
 </resources>

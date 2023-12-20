@@ -1,5 +1,6 @@
 package com.example.msapp.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,11 +8,13 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.constants.ScaleTypes;
 import com.denzcoskun.imageslider.interfaces.ItemClickListener;
 import com.denzcoskun.imageslider.models.SlideModel;
+import com.example.msapp.BookingActivity;
 import com.example.msapp.R;
 import com.example.msapp.databinding.FragmentHomeBinding;
 
@@ -41,6 +44,16 @@ public class homeFragment extends Fragment {
         imageList.add(new SlideModel(R.drawable.banner1,ScaleTypes.FIT));
         imageList.add(new SlideModel(R.drawable.banner1,ScaleTypes.FIT));
         imageList.add(new SlideModel(R.drawable.banner1,ScaleTypes.FIT));
+
+        ImageView imageView = binding.driverImgview;
+
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                 Intent intent = new Intent(getContext(), BookingActivity.class);
+                 startActivity(intent);
+            }
+        });
 
         // Set the image list to the SliderView
         sliderView.setImageList(imageList);
