@@ -9,15 +9,11 @@
 
     <style name="Theme.MSApp" parent="Base.Theme.MSApp" />
 
-
     <style name="BookingTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize the color of the action bar -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
 
-        <!-- Customize other action bar attributes -->
-        <item name="android:windowActionBar">true</item>
-        <item name="android:windowNoTitle">false</item>
     </style>
 
 
