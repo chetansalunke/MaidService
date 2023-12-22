@@ -12,4 +12,6 @@
 
     <string name="workerpreferences">Worker Preferences</string>
     <string name="actionbartext">Booking</string>/>
+
+    <string name="location">Your Location</string>
 </resources>

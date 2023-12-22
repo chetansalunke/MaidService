@@ -27,6 +27,7 @@
         <!-- Customize the color of the action bar -->
         <item name="android:fontFamily">@font/andika_new_basic_bold</item>
         <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
         <item name="textFillColor">@color/black</item>
     </style>
 
