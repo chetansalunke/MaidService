@@ -88,7 +88,7 @@
                                 android:layout_height="match_parent">
 
                                 <ImageView
-                                    android:id="@+id/cookingImg"
+                                    android:id="@+id/domesticServiceImg"
                                     android:layout_width="69dp"
                                     android:layout_height="53dp"
                                     android:src="@mipmap/domestic"
@@ -108,7 +108,7 @@
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintHorizontal_bias="0.0"
                                     app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toBottomOf="@+id/cookingImg" />
+                                    app:layout_constraintTop_toBottomOf="@+id/domesticServiceImg" />
                             </androidx.constraintlayout.widget.ConstraintLayout>
                         </LinearLayout>
 

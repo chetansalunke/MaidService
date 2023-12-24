@@ -3,6 +3,7 @@ package com.example.msapp.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -47,11 +48,25 @@ public class homeFragment extends Fragment {
 
         ImageView imageView = binding.driverImgview;
 
+
+
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                  Intent intent = new Intent(getContext(), BookingActivity.class);
                  startActivity(intent);
+            }
+        });
+
+
+        // Booking domestic service
+
+        ImageView domesticService = binding.domesticServiceImg;
+        domesticService.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), BookingActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -72,8 +87,6 @@ public class homeFragment extends Fragment {
         });
 
         return rootView;
-
-
 
 
 

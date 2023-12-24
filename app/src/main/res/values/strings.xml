@@ -9,9 +9,24 @@
     <string name="radiobtn1">Male</string>
     <string name="radiobtn2">Female</string>
     <string name="servicetype">Service Type</string>
-
+    <string name="chooselocation">Choose Location</string>
     <string name="workerpreferences">Worker Preferences</string>
     <string name="actionbartext">Booking</string>/>
+    <string name="address">Enter Address</string>/>
+    <string name="addon">Add On</string>
+    <string name="dishwashing">Dishwashing</string>
+    <string name="broomingmopping">Brooming,Mopping</string>
+    <string name="dusting">Dusting</string>
+    <string name="morning">Morning</string>
+    <string name="afternoon">Afternoon</string>
+    <string name="evening">Evening</string>
+    <string name="night">Night</string>
+    <string name="onemonth">1 Month</string>
+    <string name="sixmonth">6 Month</string>
+    <string name="oneyear">1 year</string>
+    <string name="payment">payment</string>
+    <string name="selectpackage">Select Packge</string>
+
 
     <string name="location">Your Location</string>
 </resources>
