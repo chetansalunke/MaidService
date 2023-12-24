@@ -26,6 +26,12 @@
     <string name="oneyear">1 year</string>
     <string name="payment">payment</string>
     <string name="selectpackage">Select Packge</string>
+    <string name="selectage">Select Baby Age</string>
+    <string name="belowoneyear"> Below 1 year</string>
+    <string name="onetothreeyears"> 1 To 2.5 years</string>
+    <string name="morethanthreeyears">More than 3 years</string>
+    <string name="selecttime">Select Timeing</string>
+
 
 
     <string name="location">Your Location</string>

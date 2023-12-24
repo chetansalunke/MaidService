@@ -1,6 +1,7 @@
 package com.example.msapp.Fragment;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 
 import androidx.activity.result.contract.ActivityResultContracts;
@@ -46,29 +47,15 @@ public class homeFragment extends Fragment {
         imageList.add(new SlideModel(R.drawable.banner1,ScaleTypes.FIT));
         imageList.add(new SlideModel(R.drawable.banner1,ScaleTypes.FIT));
 
-        ImageView imageView = binding.driverImgview;
-
-
-
-        imageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                 Intent intent = new Intent(getContext(), BookingActivity.class);
-                 startActivity(intent);
-            }
-        });
-
-
-        // Booking domestic service
-
+        ImageView driverService = binding.driverImgview;
         ImageView domesticService = binding.domesticServiceImg;
-        domesticService.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getContext(), BookingActivity.class);
-                startActivity(intent);
-            }
-        });
+        ImageView cookigService = binding.cookImg;
+        ImageView babysitterSerivce = binding.babySitterImg;
+        ImageView eldercareService = binding.elderCareImg;
+        ImageView patientcareService = binding.patientCareImg;
+        ImageView petcareService = binding.petCareImg;
+        ImageView officeboyService = binding.oficeBoyImg;
+
 
         // Set the image list to the SliderView
         sliderView.setImageList(imageList);
@@ -86,6 +73,70 @@ public class homeFragment extends Fragment {
             }
         });
 
+
+
+        //  Booking driverService
+        driverService.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                 startNextActivity("driverService");
+            }
+        });
+
+
+        // Booking domesticService
+        domesticService.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                 startNextActivity("domesticService");
+            }
+        });
+
+        // Booking cookigService
+        cookigService.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startNextActivity("cookigService");
+            }
+        });
+        // Booking babysitterSerivce
+        babysitterSerivce.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startNextActivity("babysitterSerivce");
+            }
+        });
+
+        // Booking eldercareService
+        eldercareService.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startNextActivity("eldercareService");
+            }
+        });
+
+        // Booking patientcareService
+        patientcareService.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startNextActivity("patientcareService");
+            }
+        });
+        // Booking petcareService
+        petcareService.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startNextActivity("petcareService");
+            }
+        });
+        // Booking officeboyService
+        officeboyService.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startNextActivity("officeboyService");
+            }
+        });
+
         return rootView;
 
 
@@ -93,5 +144,12 @@ public class homeFragment extends Fragment {
 
 
 
+    }
+
+    // method to identify the which activity is clicled
+    private void startNextActivity(String identifier) {
+        Intent intent = new Intent(getContext(), BookingActivity.class);
+        intent.putExtra("clicked_identifer",identifier);
+        startActivity(intent);
     }
 }

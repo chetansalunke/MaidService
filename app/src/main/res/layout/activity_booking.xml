@@ -51,7 +51,7 @@
                         android:layout_marginTop="8dp"/>
 
                     <Spinner
-                        android:id="@+id/spinner"
+                        android:id="@+id/locationSpinner"
                         android:layout_width="match_parent"
                         android:layout_height="48sp"
                         android:layout_marginStart="2sp"
@@ -88,6 +88,7 @@
                         android:layout_marginTop="8dp"/>
 
                     <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/addressEt"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Address">
@@ -129,7 +130,7 @@
                         android:textColor="@android:color/black"
                         android:layout_marginTop="8dp"/>
                     <RadioGroup
-                        android:id="@+id/radioGroup1"
+                        android:id="@+id/workergenderRg"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -169,6 +170,36 @@
                         android:layout_height="48sp"
                         android:text="@string/dusting" />
 
+                        <!-- Select timing-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/selecttime"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginTop="8dp"/>
+
+                    <CheckBox
+                        android:id="@+id/checkBox4"
+                        android:layout_width="match_parent"
+                        android:layout_height="48sp"
+                        android:text="@string/morning" />
+                    <CheckBox
+                        android:id="@+id/checkBox5"
+                        android:layout_width="match_parent"
+                        android:layout_height="48sp"
+                        android:text="@string/afternoon" />
+                    <CheckBox
+                        android:id="@+id/checkBox6"
+                        android:layout_width="match_parent"
+                        android:layout_height="48sp"
+                        android:text="@string/evening" />
+                    <CheckBox
+                        android:id="@+id/checkBox7"
+                        android:layout_width="match_parent"
+                        android:layout_height="48sp"
+                        android:text="@string/night" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -177,6 +208,39 @@
                         android:textColor="@android:color/black"
                         android:layout_marginTop="8dp"/>
 
+                    <!--            radio buttons for age of selection Textiew-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/selectage"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginTop="8dp"/>
+                    <!--            radio buttons for age of baby-->
+                    <RadioGroup
+                        android:id="@+id/babyAgeCbg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/babyAge1"
+                            android:layout_width="match_parent"
+                            android:text="@string/oneyear"
+                            android:layout_height="48sp"/>
+                        <RadioButton
+                            android:id="@+id/babyAge2"
+                            android:layout_width="match_parent"
+                            android:text="@string/onetothreeyears"
+                            android:layout_height="48sp"/>
+                        <RadioButton
+                            android:id="@+id/babyAge3"
+                            android:layout_width="match_parent"
+                            android:text="@string/morethanthreeyears"
+                            android:layout_height="48sp"/>
+
+                    </RadioGroup>
+            <!--            radio buttons for packges-->
                     <RadioGroup
                         android:id="@+id/radioGroup"
                         android:layout_width="match_parent"
@@ -200,8 +264,6 @@
                             android:layout_height="48sp"/>
 
                     </RadioGroup>
-
-
                     <TextView
                         android:layout_width="match_parent"
                         android:theme="@style/smallText"
@@ -222,13 +284,9 @@
                         android:layout_margin="16dp"
                         android:background="@drawable/button_background"
 
-
-                     />
-
-
+                        />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
-
 
 
         </LinearLayout>
