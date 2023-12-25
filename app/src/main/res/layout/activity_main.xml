@@ -19,8 +19,6 @@
         app:menu="@menu/menu" />
 
 
-
-
     <include
         android:id="@+id/appbar"
         layout="@layout/appbar" />
