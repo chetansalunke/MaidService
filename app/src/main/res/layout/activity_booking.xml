@@ -43,6 +43,7 @@
                     android:orientation="vertical"
                     android:padding="16dp">
                     <TextView
+                        android:theme="@style/largerText"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/chooselocation"
@@ -51,6 +52,7 @@
                         android:layout_marginTop="8dp"/>
 
                     <Spinner
+
                         android:id="@+id/locationSpinner"
                         android:layout_width="match_parent"
                         android:layout_height="48sp"
@@ -80,6 +82,7 @@
                     android:orientation="vertical"
                     android:padding="16dp">
                     <TextView
+                        android:theme="@style/largerText"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/address"
@@ -88,12 +91,14 @@
                         android:layout_marginTop="8dp"/>
 
                     <com.google.android.material.textfield.TextInputLayout
+
                         android:id="@+id/addressEt"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Address">
 
                         <com.google.android.material.textfield.TextInputEditText
+
                             android:layout_width="match_parent"
                             android:layout_height="48dp"
                             android:background="@drawable/edit_text_background"
@@ -123,6 +128,9 @@
                     android:orientation="vertical"
                     android:padding="16dp">
                     <TextView
+
+                        android:theme="@style/largerText"
+                        android:id="@+id/workerPrefTv"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/workerpreferences"
@@ -130,16 +138,21 @@
                         android:textColor="@android:color/black"
                         android:layout_marginTop="8dp"/>
                     <RadioGroup
+
+
                         android:id="@+id/workergenderRg"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
                     <RadioButton
+
                         android:id="@+id/radioBtn1"
                         android:layout_width="match_parent"
                         android:text="Male"
                         android:layout_height="48sp"/>
                     <RadioButton
+
+
                         android:id="@+id/radioBtn2"
                         android:layout_width="match_parent"
                         android:text="Female"
@@ -147,6 +160,8 @@
                     </RadioGroup>
 
                     <TextView
+                        android:theme="@style/largerText"
+                        android:id="@+id/addOnTv"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/addon"
@@ -160,6 +175,7 @@
                         android:layout_height="48sp"
                         android:text="@string/dishwashing" />
                     <CheckBox
+
                         android:id="@+id/checkBox2"
                         android:layout_width="match_parent"
                         android:layout_height="48sp"
@@ -172,6 +188,8 @@
 
                         <!-- Select timing-->
                     <TextView
+                        android:theme="@style/largerText"
+                        android:id="@+id/selectTimeTv"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/selecttime"
@@ -200,16 +218,12 @@
                         android:layout_height="48sp"
                         android:text="@string/night" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/selectpackage"
-                        android:textSize="18sp"
-                        android:textColor="@android:color/black"
-                        android:layout_marginTop="8dp"/>
+
 
                     <!--            radio buttons for age of selection Textiew-->
                     <TextView
+                        android:theme="@style/largerText"
+                        android:id="@+id/selectAgeTv"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/selectage"
@@ -218,7 +232,7 @@
                         android:layout_marginTop="8dp"/>
                     <!--            radio buttons for age of baby-->
                     <RadioGroup
-                        android:id="@+id/babyAgeCbg"
+                        android:id="@+id/slectAgeRg"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -239,7 +253,16 @@
                             android:text="@string/morethanthreeyears"
                             android:layout_height="48sp"/>
 
+
                     </RadioGroup>
+                    <TextView
+                        android:theme="@style/largerText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/selectpackage"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginTop="8dp"/>
             <!--            radio buttons for packges-->
                     <RadioGroup
                         android:id="@+id/radioGroup"
@@ -264,6 +287,29 @@
                             android:layout_height="48sp"/>
 
                     </RadioGroup>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:theme="@style/largerText"
+                        android:layout_height="wrap_content"
+                        android:text="@string/anyremark"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginTop="8dp"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/remarkEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Remark">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:background="@drawable/edit_text_background"
+                            android:textSize="16sp"
+                            android:padding="12dp"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
                     <TextView
                         android:layout_width="match_parent"
                         android:theme="@style/smallText"

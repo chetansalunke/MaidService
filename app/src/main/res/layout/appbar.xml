@@ -7,13 +7,13 @@
     android:layout_height="?attr/actionBarSize"
     android:background="@color/colorPrimary"
     android:id="@+id/appBar"
-    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/imageView9"
