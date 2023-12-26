@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <androidx.appcompat.widget.Toolbar
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -11,47 +13,48 @@
     android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
     >
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/imageView9"
-            android:layout_width="48sp"
-            android:layout_height="48sp"
-            android:layout_marginStart="6sp"
-            android:src="@drawable/wprofile"
-            app:layout_constraintBottom_toBottomOf="@+id/textView4"
-            app:layout_constraintEnd_toStartOf="@+id/textView4"
-            app:layout_constraintHorizontal_bias="0.266"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/textView4" />
-
-        <TextView
-            android:theme="@style/smallText"
-            android:textStyle="bold"
-            android:id="@+id/textView4"
-            android:layout_width="89dp"
-            android:layout_height="16dp"
-            android:layout_marginStart="9dp"
-            android:text="@string/location"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imageView9"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="48sp"
-            android:layout_height="48sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.922"
-            app:layout_constraintStart_toEndOf="@+id/textView4"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/notify" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </androidx.appcompat.widget.Toolbar>
 
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent">-->
+
+    <!--        <de.hdodenhof.circleimageview.CircleImageView-->
+    <!--            android:id="@+id/imageView9"-->
+    <!--            android:layout_width="48sp"-->
+    <!--            android:layout_height="48sp"-->
+    <!--            android:layout_marginStart="6sp"-->
+    <!--            android:src="@drawable/wprofile"-->
+    <!--            app:layout_constraintBottom_toBottomOf="@+id/textView4"-->
+    <!--            app:layout_constraintEnd_toStartOf="@+id/textView4"-->
+    <!--            app:layout_constraintHorizontal_bias="0.266"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="@+id/textView4" />-->
+
+    <!--        <TextView-->
+    <!--            android:theme="@style/smallText"-->
+    <!--            android:textStyle="bold"-->
+    <!--            android:id="@+id/textView4"-->
+    <!--            android:layout_width="89dp"-->
+    <!--            android:layout_height="16dp"-->
+    <!--            android:layout_marginStart="9dp"-->
+    <!--            android:text="@string/location"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintStart_toEndOf="@+id/imageView9"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/imageView3"-->
+    <!--            android:layout_width="48sp"-->
+    <!--            android:layout_height="48sp"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.922"-->
+    <!--            app:layout_constraintStart_toEndOf="@+id/textView4"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:srcCompat="@drawable/notify" />-->
+
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
