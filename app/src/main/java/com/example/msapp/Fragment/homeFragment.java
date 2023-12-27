@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.constants.ScaleTypes;
@@ -47,14 +48,14 @@ public class homeFragment extends Fragment {
         imageList.add(new SlideModel(R.drawable.banner1,ScaleTypes.FIT));
         imageList.add(new SlideModel(R.drawable.banner1,ScaleTypes.FIT));
 
-        ImageView driverService = binding.driverImgview;
-        ImageView domesticService = binding.domesticServiceImg;
-        ImageView cookigService = binding.cookImg;
-        ImageView babysitterSerivce = binding.babySitterImg;
-        ImageView eldercareService = binding.elderCareImg;
-        ImageView patientcareService = binding.patientCareImg;
-        ImageView petcareService = binding.petCareImg;
-        ImageView officeboyService = binding.oficeBoyImg;
+        LinearLayout driverService = binding.driverImgview;
+        LinearLayout domesticService = binding.domesticServiceImg;
+        LinearLayout cookigService = binding.cookImg;
+        LinearLayout babysitterSerivce = binding.babySitterImg;
+        LinearLayout eldercareService = binding.elderCareImg;
+        LinearLayout patientcareService = binding.patientCareImg;
+        LinearLayout petcareService = binding.petCareImg;
+        LinearLayout officeboyService = binding.oficeBoyImg;
 
 
         // Set the image list to the SliderView

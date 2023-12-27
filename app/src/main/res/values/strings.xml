@@ -35,6 +35,14 @@
     <string name="userName">Chetan Salunke</string>
     <string name="mobileNumber">8975954638</string>
     <string name="logout"> Logout</string>
+    <string name="cookingService"> Cooking Service</string>
+    <string name="domesticService"> Domestic Service</string>
+    <string name="babySitterService"> Baby sitter Service</string>
+    <string name="elderCareService"> Elder Care Service</string>
+    <string name="patientCareService"> Patient Service</string>
+    <string name="petCareService"> Pet Service</string>
+    <string name="officeBoyService"> Office Boy Service</string>
+    <string name="driverService"> Driver Service</string>
 
     <string name="navopen">Open Nav</string>
     <string name="navclose">Close Nav</string>

@@ -41,6 +41,7 @@
 
             </androidx.cardview.widget.CardView>
 
+
             <TextView
                 android:id="@+id/textView5"
                 android:layout_width="wrap_content"
@@ -52,335 +53,286 @@
                 android:text="Categories"
                 android:textSize="16sp" />
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="8dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.51"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.48000002">
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
 
                     <LinearLayout
+                        android:id="@+id/domesticServiceImg"
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:orientation="horizontal"
-                        android:padding="12dp">
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="6dp">
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginEnd="20dp"
-                            android:layout_weight="1">
+                        <!-- ImageView -->
+                        <ImageView
+                            android:id="@+id/domesticServiceImg1"
+                            android:layout_width="69dp"
+                            android:layout_height="53sp"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/domestic" />
 
+                        <!-- TextView -->
+                        <TextView
+                            android:gravity="center"
+                            android:id="@+id/domesticServicesTv"
+                            android:layout_width="72sp"
+                            android:layout_height="35sp"
+                            android:text="domestic service"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
 
-                            <androidx.constraintlayout.widget.ConstraintLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent">
+                            android:ellipsize="end"
+                            android:paddingTop="8dp" />
 
-                                <ImageView
-                                    android:id="@+id/domesticServiceImg"
-                                    android:layout_width="69dp"
-                                    android:layout_height="53dp"
-                                    android:src="@mipmap/domestic"
-                                    app:layout_constraintBottom_toTopOf="@+id/domesticServicesTv"
-                                    app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintHorizontal_bias="0.0"
-                                    app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent" />
-
-                                <TextView
-                                    android:id="@+id/domesticServicesTv"
-                                    android:layout_width="72dp"
-                                    android:layout_height="35dp"
-                                    android:text="domestic sercices"
-                                    android:textAlignment="center"
-                                    app:layout_constraintBottom_toBottomOf="parent"
-                                    app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintHorizontal_bias="0.0"
-                                    app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toBottomOf="@+id/domesticServiceImg" />
-                            </androidx.constraintlayout.widget.ConstraintLayout>
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="20dp"
-                            android:layout_weight="1">
-
-
-                            <androidx.constraintlayout.widget.ConstraintLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent">
-
-                                <ImageView
-                                    android:id="@+id/cookImg"
-                                    android:layout_width="67dp"
-                                    android:layout_height="67dp"
-                                    android:src="@mipmap/cooking_icon"
-
-                                    app:layout_constraintBottom_toTopOf="@+id/cookingTv"
-                                    app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintHorizontal_bias="0.0"
-                                    app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    app:layout_constraintVertical_bias="0.0" />
-
-                                <TextView
-                                    android:id="@+id/cookingTv"
-                                    android:layout_width="67dp"
-                                    android:layout_height="wrap_content"
-                                    android:text="cooking"
-                                    android:textAlignment="center"
-                                    app:layout_constraintBottom_toBottomOf="parent"
-                                    app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toBottomOf="@+id/cookImg" />
-                            </androidx.constraintlayout.widget.ConstraintLayout>
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginEnd="20dp"
-                            android:layout_weight="1">
-
-
-                            <androidx.constraintlayout.widget.ConstraintLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent">
-
-                                <ImageView
-                                    android:id="@+id/babySitterImg"
-                                    android:layout_width="67dp"
-                                    android:layout_height="67dp"
-                                    android:src="@mipmap/baby_sitter"
-
-                                    app:layout_constraintBottom_toTopOf="@+id/babySitterTv"
-                                    app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintHorizontal_bias="0.0"
-                                    app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    app:layout_constraintVertical_bias="0.0" />
-
-                                <TextView
-                                    android:id="@+id/babySitterTv"
-                                    android:layout_width="67dp"
-                                    android:layout_height="wrap_content"
-                                    android:text="baby sitter"
-                                    android:textAlignment="center"
-                                    app:layout_constraintBottom_toBottomOf="parent"
-                                    app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toBottomOf="@+id/babySitterImg" />
-                            </androidx.constraintlayout.widget.ConstraintLayout>
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginEnd="20dp"
-                            android:layout_weight="1">
-
-
-                            <androidx.constraintlayout.widget.ConstraintLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent">
-
-                                <ImageView
-                                    android:id="@+id/elderCareImg"
-                                    android:layout_width="67dp"
-                                    android:layout_height="67dp"
-                                    android:src="@mipmap/elder_care"
-                                    app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintHorizontal_bias="0.0"
-                                    app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent" />
-
-                                <TextView
-                                    android:id="@+id/elderCareTextview"
-                                    android:layout_width="67dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="67dp"
-                                    android:text="elder care"
-                                    android:textAlignment="center"
-                                    app:autoSizeTextType="uniform"
-                                    app:layout_constraintBottom_toBottomOf="parent"
-                                    app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintHorizontal_bias="1.0"
-                                    app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toTopOf="@+id/elderCareImg"
-                                    app:layout_constraintVertical_bias="0.0"
-                                    tools:ellipsize="middle" />
-                            </androidx.constraintlayout.widget.ConstraintLayout>
-                        </LinearLayout>
 
                     </LinearLayout>
-
                     <LinearLayout
+                        android:id="@+id/cookImg"
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="12dp"
-                        android:layout_weight="1"
-                        android:orientation="horizontal"
-                        android:padding="12dp">
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="6dp">
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginEnd="20dp"
-                            android:layout_weight="1">
+                        <!-- ImageView -->
+                        <ImageView
+                            android:id="@+id/cookImg1"
+                            android:layout_width="69dp"
+                            android:layout_height="53sp"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/cooking_icon" />
 
+                        <!-- TextView -->
+                        <TextView
+                            android:gravity="center"
+                            android:id="@+id/cookingTv"
+                            android:layout_width="72sp"
+                            android:layout_height="35sp"
+                            android:text="@string/cookingService"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
 
-                            <androidx.constraintlayout.widget.ConstraintLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent">
-
-                                <ImageView
-                                    android:id="@+id/patientCareImg"
-                                    android:layout_width="69dp"
-                                    android:layout_height="53dp"
-                                    android:src="@mipmap/patient_care"
-                                    app:layout_constraintBottom_toBottomOf="parent"
-                                    app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintHorizontal_bias="0.0"
-                                    app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    app:layout_constraintVertical_bias="0.0" />
-
-                                <TextView
-                                    android:layout_width="67dp"
-                                    android:layout_height="35dp"
-                                    android:text="patient care"
-                                    android:textAlignment="center"
-                                    app:layout_constraintBottom_toBottomOf="parent"
-                                    app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintHorizontal_bias="0.253"
-                                    app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toBottomOf="@+id/patientCareImg" />
-                            </androidx.constraintlayout.widget.ConstraintLayout>
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="20dp"
-                            android:layout_weight="1">
+                            android:ellipsize="end"
+                            android:paddingTop="8dp" />
 
 
-                            <androidx.constraintlayout.widget.ConstraintLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent">
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/babySitterImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="6dp">
 
-                                <ImageView
-                                    android:id="@+id/petCareImg"
-                                    android:layout_width="67dp"
-                                    android:layout_height="67dp"
-                                    android:src="@mipmap/pet_care"
-                                    app:layout_constraintBottom_toTopOf="@+id/petCareTextView"
-                                    app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    app:layout_constraintVertical_bias="1.0" />
+                        <!-- ImageView -->
+                        <ImageView
+                            android:id="@+id/babySitterImg1"
+                            android:layout_width="69dp"
+                            android:layout_height="53sp"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/baby_sitter" />
 
-                                <TextView
-                                    android:id="@+id/petCareTextView"
-                                    android:layout_width="67dp"
-                                    android:layout_height="wrap_content"
-                                    android:text="pet care"
-                                    android:textAlignment="center"
-                                    app:layout_constraintBottom_toBottomOf="parent"
-                                    app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toBottomOf="@+id/petCareImg" />
-                            </androidx.constraintlayout.widget.ConstraintLayout>
-                        </LinearLayout>
+                        <!-- TextView -->
+                        <TextView
+                            android:gravity="center"
+                            android:id="@+id/babySitterTv"
+                            android:layout_width="72sp"
+                            android:layout_height="35sp"
+                            android:text="@string/babySitterService"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginEnd="20dp"
-                            android:layout_weight="1">
+                            android:ellipsize="end"
+                            android:paddingTop="8dp" />
 
 
-                            <androidx.constraintlayout.widget.ConstraintLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent">
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/elderCareImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="6dp">
 
-                                <ImageView
-                                    android:id="@+id/oficeBoyImg"
-                                    android:layout_width="67dp"
-                                    android:layout_height="67dp"
-                                    android:src="@mipmap/office_boy"
-                                    app:layout_constraintBottom_toTopOf="@+id/officeBoyTectView"
-                                    app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintHorizontal_bias="0.0"
-                                    app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    app:layout_constraintVertical_bias="0.0" />
+                        <!-- ImageView -->
+                        <ImageView
+                            android:id="@+id/elderCareImg1"
+                            android:layout_width="69dp"
+                            android:layout_height="53sp"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/elder_care" />
 
-                                <TextView
-                                    android:id="@+id/officeBoyTectView"
-                                    android:layout_width="67dp"
-                                    android:layout_height="wrap_content"
-                                    android:text="office boy"
-                                    android:textAlignment="center"
-                                    app:layout_constraintBottom_toBottomOf="parent"
-                                    app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toBottomOf="@+id/oficeBoyImg" />
-                            </androidx.constraintlayout.widget.ConstraintLayout>
-                        </LinearLayout>
+                        <!-- TextView -->
+                        <TextView
+                            android:gravity="center"
+                            android:id="@+id/elderCareTextview"
+                            android:layout_width="72sp"
+                            android:layout_height="35sp"
+                            android:text="@string/elderCareService"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginEnd="20dp"
-                            android:layout_weight="1">
+                            android:ellipsize="end"
+                            android:paddingTop="8dp" />
 
-
-                            <androidx.constraintlayout.widget.ConstraintLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent">
-
-                                <ImageView
-                                    android:id="@+id/driverImgview"
-                                    android:layout_width="67dp"
-                                    android:layout_height="67dp"
-                                    android:src="@mipmap/driver"
-                                    app:layout_constraintBottom_toTopOf="@+id/broomingTextView"
-                                    app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintHorizontal_bias="0.666"
-                                    app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    app:layout_constraintVertical_bias="0.0" />
-
-                                <TextView
-                                    android:id="@+id/broomingTextView"
-                                    android:layout_width="67dp"
-                                    android:layout_height="wrap_content"
-                                    android:text="driver"
-                                    android:textAlignment="center"
-                                    app:layout_constraintBottom_toBottomOf="parent"
-                                    app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toBottomOf="@+id/driverImgview" />
-                            </androidx.constraintlayout.widget.ConstraintLayout>
-                        </LinearLayout>
 
                     </LinearLayout>
 
                 </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/patientCareImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="6dp">
+
+                        <!-- ImageView -->
+                        <ImageView
+                            android:id="@+id/patientCareImg1"
+                            android:layout_width="69dp"
+                            android:layout_height="53sp"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/patient_care" />
+
+                        <!-- TextView -->
+                        <TextView
+                            android:gravity="center"
+                            android:id="@+id/patientCareTv"
+                            android:layout_width="72sp"
+                            android:layout_height="35sp"
+                            android:text="@string/patientCareService"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+
+                            android:ellipsize="end"
+                            android:paddingTop="8dp" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/petCareImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="6dp">
+
+                        <!-- ImageView -->
+                        <ImageView
+                            android:id="@+id/petCareImg1"
+                            android:layout_width="69dp"
+                            android:layout_height="53sp"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/pet_care" />
+
+                        <!-- TextView -->
+                        <TextView
+                            android:gravity="center"
+                            android:id="@+id/petCareTextView"
+                            android:layout_width="72sp"
+                            android:layout_height="35sp"
+                            android:text="@string/petCareService"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+
+                            android:ellipsize="end"
+                            android:paddingTop="8dp" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/oficeBoyImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="6dp">
+
+                        <!-- ImageView -->
+                        <ImageView
+                            android:id="@+id/oficeBoyImg1"
+                            android:layout_width="69dp"
+                            android:layout_height="53sp"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/office_boy" />
+
+                        <!-- TextView -->
+                        <TextView
+                            android:gravity="center"
+                            android:id="@+id/officeBoyTectView"
+                            android:layout_width="72sp"
+                            android:layout_height="35sp"
+                            android:text="@string/officeBoyService"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+
+                            android:ellipsize="end"
+                            android:paddingTop="8dp" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/driverImgview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="6dp">
+
+                        <!-- ImageView -->
+                        <ImageView
+                            android:id="@+id/driverImgview1"
+                            android:layout_width="69dp"
+                            android:layout_height="53sp"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/driver" />
+
+                        <!-- TextView -->
+                        <TextView
+                            android:gravity="center"
+                            android:id="@+id/driverTv"
+                            android:layout_width="72sp"
+                            android:layout_height="35sp"
+                            android:text="@string/driverService"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+
+                            android:ellipsize="end"
+                            android:paddingTop="8dp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
