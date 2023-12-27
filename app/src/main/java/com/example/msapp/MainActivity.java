@@ -18,6 +18,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.msapp.Fragment.homeFragment;
@@ -44,6 +45,10 @@ public class MainActivity extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        ImageView imageView = findViewById(R.id.profileImgView);
+
+
+
 
         // Find the NavHostFragment using its ID
         NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.fragmentContainerView);
@@ -62,7 +67,7 @@ public class MainActivity extends AppCompatActivity  {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
-        fragmentTransaction.replace(R.id.containerFrame,fragment);
+        fragmentTransaction.replace(R.id.fragmentContainerView,fragment);
         fragmentTransaction.commit();
     };
 
