@@ -32,6 +32,9 @@
     <string name="morethanthreeyears">More than 3 years</string>
     <string name="selecttime">Select Timeing</string>
     <string name="anyremark">Any Remark</string>
+    <string name="userName">Chetan Salunke</string>
+    <string name="mobileNumber">8975954638</string>
+    <string name="logout"> Logout</string>
 
     <string name="navopen">Open Nav</string>
     <string name="navclose">Close Nav</string>
